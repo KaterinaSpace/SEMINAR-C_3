@@ -4,31 +4,27 @@
 
 // 1 : x > 0 И y > 0
 
-Console.WriteLine("Введите координату X:");
-int x = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите координату Y:");
-int y = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите номер четверти:");
+int num = int.Parse(Console.ReadLine());
 
-if (x != 0 && y != 0)
+if (num == 1)
 {
-  if (x > 0 && y > 0)
-  {
-    Console.WriteLine("Четверть 1");
-  }
-  else if (x < 0 && y > 0)
-  {
-    Console.WriteLine("Четверть 2");
-  }
-  else if (x < 0 && y < 0)
-  {
-    Console.WriteLine("Четверть 3");
-  }
-  else if (x > 0 && y < 0)
-  {
-    Console.WriteLine("Четверть 4");
-  }
+  Console.WriteLine("x > 0 и y > 0");
 }
+else if (num == 2)
+{
+  Console.WriteLine("x < 0 и y > 0");
+}
+else if (num == 3)
+{
+  Console.WriteLine("x < 0  y < 0");
+}
+else if (num == 4)
+{
+  Console.WriteLine("x > 0 и y < 0");
+}
+
 else
 {
-  Console.WriteLine(" x или y равны нулю!");
+  Console.WriteLine(" такой четверти нет!");
 }
