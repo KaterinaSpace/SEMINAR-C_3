@@ -21,5 +21,8 @@ Console.WriteLine("Введите координаты y2");
 int y2 = int.Parse(Console.ReadLine());
 
 double answer = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+//double sqr1 = Math.Pow((x1-x2), 2);    вариант 2 
+//double sqr2 = Math.Pow((y1-y2), 2);    вариант 2 , больше кода иногда лучше 
 
-Console.WriteLine(answer);
+Console.WriteLine(Math.Round(answer, 3));   //округление с помощью Math.Round  округление  до второго символа
+// Console.WriteLine(Math.Round(Math.Sqrt(sqr1 + sqr2), 3));     2 вариант 
